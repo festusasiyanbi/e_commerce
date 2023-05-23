@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+}
+
+.Nav {
+  width: 100%;
+  min-height: 55px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: limegreen;
+}
+.displayCart {
+  position: relative;
+}
+
+.cartItems {
+  width: 500px;
+  height: fit-content;
+  position: absolute;
+  right: 85px;
+  top: 65px;
+  border-radius: 8px;
+  background-color: rgb(248, 241, 241);
+}
+.cartItems .caret-up {
+  position: absolute;
+  right: 3px;
+  top: -16.5px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cartitem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cartitem img {
+  margin-right: 2rem;
+  object-fit: contain;
+}
+
+.cartitem span {
+  margin-right: 10px;
+}
+
+.cartitem .decrement {
+  background-color: #aaa;
+  padding: 0.4rem;
+}
+.cartitem .increment {
+  background-color: orange;
+  padding: 0.4rem;
+}
+
+.cartitem .delete {
+  color: red;
+  position: absolute;
+  right: 10px;
+}
+
+.cartItems .checkout {
+  background-color: limegreen;
+  color: white;
+  width: 50%;
+  padding: 0.5rem;
+  font-weight: 600;
+  margin-left: 20%;
+  margin-top: 0.5rem;
+}
+
+.authentication {
+  width: 120px;
+  height: fit-content;
+  position: absolute;
+  right: 30px;
+  top: 65px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.authentication .caret-up {
+  position: absolute;
+  right: 3px;
+  top: -16.5px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.authentication a {
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+ 
+}
+
+.authentication a:nth-child(2) {
+  border-bottom: 2px solid orange;
+}
+.Nav img {
+  margin-left: 15px;
+  margin-top: 7px;
+}
+.svg {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 5px;
+}
+
+.Nav button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.svg svg {
+  width: 50px;
+  padding: 0.5rem;
+  background-color: white;
+  color: rgb(165, 110, 220);
+  margin-left: 10px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+#itemcount {
+  position: absolute;
+  top: 10px;
+  transform: translate(-40%, -50%);
+  font-weight: 550;
+  color: rgb(165, 110, 220);
+  background-color: white;
+}
+
+.Nav form {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  min-height: 40px;
+}
+
+.Nav form input[type='text'] {
+  text-indent: 8px;
+  font-size: 16px;
+  color: black;
+  font-weight: 550;
+}
+
+.aside {
+  float: left;
+  width: 13%;
+  margin-left: 15px;
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+.aside h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: limegreen;
+  margin-bottom: 10px;
+}
+
+.aside p {
+  margin-bottom: 7px;
+  transition: all 0.7s;
+}
+
+.aside p:hover, span:hover {
+  color: limegreen;
+  cursor: pointer;
+}
+
+.aside p:nth-child(4) {
+  margin-bottom: 10px;
+}
+.aside p:nth-child(10) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.aside span {
+  margin-top: 10px;
+  transition: all 0.7s;
+}
+.article {
+  float: right;
+  width: 84%;
+}
+
+.shop-now {
+  width: 100%;
+  float: left;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+  color: white;
+  background-color: orange;
+  margin-bottom: 2rem;
+}
+
+
+.shop-now button {
+  padding: 10px;
+  width: 150px;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: 18px;
+  background-color: limegreen;
+}
+.shop-now-container {
+  text-align: center;
+  animation: mymove 5s linear 2s ease-in-out;
+}
+@keyframes mymove {
+  from { top: -10px; }
+  to { bottom: 0; }
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.categories button {
+  cursor: pointer;
+  padding: 7px;
+  outline: none;
+  border: none;
+  width: 120px;
+  transition: all 0.7s;
+}
+
+.active {
+  background-color: limegreen;
+  color: white;
+}
+.displayItems {
+  width: 100%;
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  margin-top: 2rem;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.Item-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3em;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.item-review {
+  font-size: 14px;
+  color: orangered;
+  font-weight: 700;
+}
+
+.description-card {
+  height: 94vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-card button {
+  width: 50%;
+  height: 48px;
+  background-color: limegreen;
+  color: white;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.description-card img {
+  width: 50%;
+  height: 70%;
+  object-fit: contain;
+  margin-bottom: 8px;
+  margin-top: 3rem;
+}
+
+.item-description {
+  text-align: center;
+  line-height: 1.35em;
+}
+
+.statusMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.notification {
+  position: fixed;
+  top: 15%;
+  background-color: limegreen;
+  color: white;
+  padding: 16px;
+  border-radius: 5px;
+  opacity: 1;
+  transform: translateY(-100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.signupform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.signupform form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: orange;
+  padding-left: 10px;
+  width: 25%;
+  border-radius: 5px;
+  min-height: 500px;
+}
+
+.signupform form input {
+  min-height: 40px;
+  font-size: 16px;
+  width: 90%;
+  border-radius: 5px;
+  text-indent: 10px;
+  border: none;
+  outline: none;
+  margin: 15px 0;
+}
+
+.userdiv {
+  width: 100%;
+}
+
+.pwddiv {
+  width: 100%;
+}
+
+.confirm_pwddiv {
+  width: 100%;
+}
+
+.signupform form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.signupform form .button button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: limegreen;
+  color: white;
+  width: 90%;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+#uidnote, #pwdnote, #confirmnote {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background: black;
+  color: white;
+  padding: 0.25rem;
+  position: relative;
+  width: 95%;
+  font-size: 1rem;
+}
+
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: fit-content;
+  margin: 10px auto;
+  border-radius: 7px;
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.line {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  padding-top: 20px;
+  color: white;
+}
+
+.line a {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.success {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.success span {
+  color: green;
+  font-weight: bold;
+}
+
+.success a {
+  text-decoration: none;
+  color: white;
+  margin-top: -10px;
+}
+
+.signinform {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signinform form {
+  width: 25%;
+  height: 400px;
+  margin-top: 20px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signinform form input {
+  min-height: 40px;
+  font-size: 16px;
+  width: 90%;
+  border-radius: 5px;
+  text-indent: 10px;
+  border: none;
+  outline: none;
+  margin: 15px 0;
+}
+
+.signinform form button {
+  width: 90%;
+  background-color: limegreen;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 10px;
+
+}
