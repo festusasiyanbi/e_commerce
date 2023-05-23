@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import shopper from './shopper.png';
-import { CiShoppingCart, CiUser } from 'react-icons/ci' 
+import { CiShoppingCart, CiUser } from 'react-icons/ci'  
 import DataContext from './context/DataProvider';
 import CartItems from './CartItems';
 import Authentication from './Authentication';
@@ -30,7 +30,7 @@ const Nav = () => {
   return (
     <div>
       <nav className='Nav'>
-        <Link to="/"><img src={shopper} alt='shopper logo' width={100} height={40} /> </Link>
+        <Link to="/"><img src={shopper} alt='shopper logo' width={70} height={40} /> </Link>
         <form className='searchForm' onSubmit={(e) => e.preventDefault()}>
           <input 
             id='search'

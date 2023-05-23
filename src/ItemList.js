@@ -5,7 +5,7 @@ const ItemList = ({ item }) => {
     
           <div className='Item-Card'>
             <img src={item.image} alt={item.title} style={{
-              width: '80%',
+              width: '100px',
               height: '100px',
               objectFit: 'contain',
               marginBottom: '8px'

@@ -13,7 +13,6 @@ const Content = () => {
     try {
       const response = await fetch(url);
       const data = await response.json()
-      console.log(data)
       setItems(data)
       setIsLoading(true);
       setActive(category)
@@ -49,7 +48,7 @@ const Content = () => {
     <>
     <div className='Content'>
         <section className='section'>
-            <nav className='aside'>
+            <aside className='aside'>
                 <h4> my shopper account</h4>
                 <p>Orders</p>
                 <p>Pending Reveiews</p>
@@ -61,7 +60,7 @@ const Content = () => {
                 <p onClick={() => fetchCategory("men's clothing")}>Men's Fashion </p>
                 <p onClick={() => fetchCategory("women's clothing")}>Women's Fashion </p>
                 <span> Live help </span>
-            </nav>
+            </aside>
 
             <div className='article'>
               <div className='shop-now'>
