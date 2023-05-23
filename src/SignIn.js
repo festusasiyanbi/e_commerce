@@ -35,7 +35,7 @@ const SignIn = () => {
     <div className="signinform">
     <h2 style={{ color: 'black'}}>Sign <span style={{ color: 'limegreen'}}>In</span></h2>
       <form onSubmit={handleSubmit}>
-        {errMsg ? <p className="errmsg">{errMsg}</p> : ''}
+        {errMsg ? <p className="errmsg">{errMsg}</p> : ""}
           <input 
             id="username"
             type="text"
