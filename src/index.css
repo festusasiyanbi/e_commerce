@@ -609,4 +609,21 @@ body {
   .Item-Card {
     width: 100%;
   }
+
+  .signupform {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .signupform form {
+    width: 80%;
+  }
+  .signinform {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .signinform form {
+    width: 80%;
+  }
 }
